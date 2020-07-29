@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: $color-grey-light;
+  text-align: center;
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    background-color: $color-grey-light;
+    border-radius: 2rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    color: $color-grey-dark;
+    font-size: 2rem;
+  }
+  &__logo {
+    display: inline-block;
+    transform: translateY(0.6rem);
+    width: 3rem;
+  }
+}

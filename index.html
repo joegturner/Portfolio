@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/css/icon-font.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="src/images/favicon.png" />
+
+    <title>Joe's portfolio! Thanks for visiting</title>
+  </head>
+  <body>
+    <input type="checkbox" class="nav__checkbox" id="nav-toggle" />
+    <label for="nav-toggle" class="nav__button">
+      <span class="nav__icon">&nbsp;</span>
+    </label>
+    <div class="nav">
+      <div class="nav__left">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://support.eji.org/give/153413/#!/donation/checkout"
+          class="nav__message"
+          >Black Lives Matter</a
+        >
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://support.eji.org/give/153413/#!/donation/checkout"
+          class="nav__message--mobile"
+          >BLM</a
+        >
+      </div>
+
+      <div class="nav__right">
+        <ul class="nav__links">
+          <a href="#top" class="nav__link">Top</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#skills" class="nav__link">Skills</a>
+          <a href="#about" class="nav__link">About</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </ul>
+      </div>
+    </div>
+    <header class="header">
+      <div id="top"></div>
+      <div class="header__box-main">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Joe Turner</span>
+          <span class="heading-primary--sub u-margin-top-medium">
+            JavaScript Developer
+          </span>
+        </h1>
+        <p class="heading-secondary u-margin-top-small">
+          <i class="header__loc-icon icon-basic-geolocalize-01"></i>
+          <span>New York City</span>
+        </p>
+      </div>
+      <div class="header__box-sub">
+        <p class="heading-tertiary">Welcome to my Portfolio</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-projects">
+        <div id="projects"></div>
+        <h2 class="heading-section heading-section--dark">Projects</h2>
+
+        <div class="row">
+          <!--1st col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/weather-app.png"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span> ˚F and ˚C Weather App</span>
+                </h4>
+              </div>
+
+              <div class="card__side card__side--back">
+                <p class="card__text">
+                  A weather app that displays temperature in both ˚F and ˚C
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://joegturner.github.io/react-weather/"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/joegturner/react-weather"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <ul class="card__techs">
+                    <li>React</li>
+                    <li>Bootstrap</li>
+                    <li>Weather API</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--2nd col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/courses-manager.png"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span> Courses Manager</span>
+                </h4>
+              </div>
+              <div class="card__side card__side--back">
+                <p class="card__text card__text--small">
+                  Fictional courses manager with React rendering the UI and
+                  Express as the restful API server which runs a relational
+                  database using the promised based ORM called sequelize.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://jgturner-fullstack-courses.herokuapp.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/joegturner/Fullstack-React-REST"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <ul class="card__techs">
+                    <li>Node</li>
+                    <li>React</li>
+                    <li>Rest API</li>
+                    <li>Express</li>
+                    <li>Sequelize ORM</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--3rd col-->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <figure class="card__shape">
+                  <img
+                    src="src/images/library-manager.png"
+                    alt="Project image"
+                    class="card__image"
+                  />
+                </figure>
+
+                <h4 class="card__heading">
+                  <span> Sequelize Library</span>
+                </h4>
+              </div>
+              <div class="card__side card__side--back">
+                <p class="card__text card__text--small">
+                  Fictional Library books manager used to create, delete, and
+                  edit books with pagination and search functionality. Built
+                  with Express rendering Pug views and a relational database
+                  using the promise based ORM called sequelize.
+                </p>
+
+                <div class="card__links">
+                  <div>
+                    <a
+                      href="https://jgturner-sql-library-manager.herokuapp.com/book"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href="https://github.com/joegturner/SQL-Library-ManagerT"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="btn btn--white"
+                    >
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card__info">
+                  <ul class="card__techs">
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>Pug</li>
+                    <li>Sequelize ORM</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="b-game-card">
+              <div class="b-game-card__cover"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-skills">
+        <div id="skills"></div>
+        <h2 class="heading-section heading-section--light">Skills</h2>
+
+        <div class="skills__box">
+          <h4 class="skills__heading">Back End</h4>
+
+          <ul class="list--white-icons">
+            <li>Express</li>
+            <li>Rest API</li>
+          </ul>
+        </div>
+
+        <div class="skills__box">
+          <h4 class="skills__heading">Front End</h4>
+
+          <ul class="list--white-icons">
+            <li>React</li>
+            <li>Redux</li>
+            <li>Gatsby</li>
+            <li>GraphQL</li>
+          </ul>
+        </div>
+
+        <div class="skills__box">
+          <h4 class="skills__heading">Development</h4>
+
+          <ul class="list--white-icons">
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Node.js</li>
+            <li>Git</li>
+          </ul>
+        </div>
+
+        <div class="skills__box">
+          <h4 class="skills__heading">Database</h4>
+
+          <ul class="list--white-icons">
+            <li>SQL</li>
+            <li>Sequelize ORM</li>
+            <li>Sqlite</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-about">
+        <div id="about"></div>
+        <h2 class="heading-section heading-section--dark">About me</h2>
+        <div class="about">
+          <figure class="about__shape">
+            <img
+              src="src/images/bio-pic-2.png"
+              alt="Bio pic"
+              class="about__image"
+            />
+          </figure>
+          <div class="about__text">
+            <p>
+              I currently live in New York City. I have been working as an
+              Instrumentation and controls engineer in both controls design and
+              system integration within the Industrial setting for 8 years.
+            </p>
+            <br />
+            <p>
+              I've discovered a passion for coding, and decided to pursue my new
+              interests by learning full stack javascript development. I am now
+              actively seeking an opportunity to work as a JavaScript Developer.
+              Thank you for visiting my site!
+            </p>
+          </div>
+        </div>
+
+        <div class="education">
+          <h3 class="education__header">
+            Education
+          </h3>
+          <div class="education__box">
+            <h4 class="education__title">
+              Treehouse
+            </h4>
+            <p class="education__degree">
+              Online Fullstack JavaScript Techdegree, Dec 2019 - May 2020
+            </p>
+          </div>
+
+          <div class="education__box">
+            <h4 class="education__title">
+              University of the Pacific, Stockton CA
+            </h4>
+            <p class="education__degree">
+              Bachelor of Science in Electrical Engineering 2012
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div id="contact"></div>
+        <h2 class="heading-section heading-section--light">
+          Contact Information
+        </h2>
+        <div class="contact">
+          <div class="contact__email-box">
+            <p class="contact__email-text">joe.g.turner@gmail.com</p>
+          </div>
+          <div class="contact__links">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/joegturner"
+              class="contact__link"
+            >
+              <img
+                src="src/images/icon-linkedin.png"
+                alt="Logo"
+                class="contact__link-logo"
+              />
+              <p class="contact__link-text">Connect on LinkedIn</p>
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/joegturner"
+              class="contact__link"
+            >
+              <img
+                src="src/images/icon-github.png"
+                alt="Logo"
+                class="contact__link-logo"
+              />
+              <p class="contact__link-text">Project Source Codes</p>
+            </a>
+          </div>
+
+          <img
+            src="src/images/bio-pic-1.JPG"
+            alt="Bio pic"
+            class="contact__image"
+          />
+
+          <p class="contact__message">Thank you for visiting!!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/joegturner"
+        class="footer__link"
+      >
+        <div class="footer__text">Source Code</div>
+        <img src="src/images/icon-github.png" alt="Logo" class="footer__logo" />
+      </a>
+    </footer>
+  </body>
+</html>

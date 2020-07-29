@@ -1,0 +1,88 @@
+.about {
+  width: 80%;
+  margin: 0 auto;
+  padding: 6rem;
+
+  //   background-color: rgba($color-primary, 0.6);
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 249, 223, 0.9),
+    rgba(80, 215, 252, 0.8),
+    rgba($color-black, 0.4)
+  );
+  border-radius: 3px;
+  padding: 3rem;
+  padding-left: 9rem;
+  transform: skewX(-12deg);
+
+  @include respond(phone) {
+    padding: 1rem 1rem 1rem 5rem;
+    transform: skewX(0);
+  }
+
+  &__text {
+    padding: 1rem 5rem;
+    font-size: 2rem;
+
+    transform: skewX(12deg);
+    @include respond(phone) {
+      transform: skewX(0);
+    }
+  }
+
+  &__shape {
+    width: 20rem;
+    height: 20rem;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    transform: translateX(-3rem) skewX(12deg);
+    margin-top: 3rem;
+
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
+  }
+
+  &__image {
+    height: 100%;
+  }
+}
+
+.education {
+  width: 80%;
+  text-align: center;
+  margin: 5rem auto;
+
+  &__header {
+    font-size: 5rem;
+    font-weight: 300;
+  }
+
+  &__box {
+    position: relative;
+    margin: 3rem auto;
+    padding: 1rem;
+    width: 65%;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 249, 223, 0.9),
+      rgba(80, 215, 252, 0.8),
+      rgba(255, 249, 223, 0)
+    );
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  &__degree {
+    font-size: 2rem;
+  }
+}

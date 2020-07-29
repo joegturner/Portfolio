@@ -1,0 +1,81 @@
+.section-projects {
+  background-color: $color-grey-light;
+  z-index: 50;
+  position: relative;
+  padding: 12rem 5rem 20rem 5rem;
+  margin-top: -6rem;
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    90% 100%,
+    80% 90%,
+    70% 90%,
+    60% 100%,
+    40% 100%,
+    30% 90%,
+    20% 90%,
+    10% 100%,
+    0 100%
+  );
+
+  @include respond(tab-port) {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      90% 100%,
+      80% 95%,
+      70% 95%,
+      60% 100%,
+      40% 100%,
+      30% 95%,
+      20% 95%,
+      10% 100%,
+      0 100%
+    );
+  }
+}
+
+.section-skills {
+  text-align: center;
+  background-color: $color-grey-dark;
+  position: relative;
+  z-index: 40;
+  padding: 20rem 5rem 30rem 5rem;
+  margin-top: -18rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%);
+
+  @include respond(tab-port) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%);
+  }
+}
+
+.section-about {
+  background-color: $color-grey-light;
+
+  position: relative;
+  z-index: 30;
+  padding: 10rem 5rem 10rem 5rem;
+  margin-top: -20rem;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 90%,
+    90% 100%,
+    90% 100%,
+    10% 100%,
+    0 90%
+  );
+}
+
+.section-contact {
+  background-color: $color-grey-dark;
+
+  z-index: 20;
+  position: relative;
+  z-index: 20;
+  padding: 15rem 5rem 10rem 5rem;
+  margin-top: -10rem;
+}
