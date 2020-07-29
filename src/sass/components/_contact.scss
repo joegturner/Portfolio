@@ -66,6 +66,9 @@
     border-radius: 60%;
 
     box-shadow: 0 0.2rem 1rem rgba($color-white, 0.4);
+    @include respond(phone) {
+      width: 35rem;
+    }
   }
 
   &__message {

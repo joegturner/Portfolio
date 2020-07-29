@@ -34,6 +34,20 @@
     );
   }
 
+  @include respond(phone) {
+    height: 7rem;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      85% 100%,
+      80% 0,
+      20% 0,
+      15% 100%,
+      0 100%
+    );
+  }
+
   &__left {
     padding: 0.1rem 2rem;
     float: left;
@@ -78,6 +92,9 @@
       position: absolute;
       top: 30%;
       right: 10%;
+    }
+    @include respond(phone) {
+      right: 15%;
     }
   }
 

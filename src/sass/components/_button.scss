@@ -6,6 +6,7 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 1.3rem;
     padding: 1.5rem 1rem;
     margin: 0.2rem;
     display: inline-block;
@@ -13,7 +14,6 @@
 
     transition: all 0.2s;
     position: relative;
-    font-size: 1.3rem;
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
     z-index: 50;
     // Change for the <button> element
@@ -27,7 +27,8 @@
     }
 
     @include respond(phone) {
-      width: 14rem;
+      width: 10rem;
+      font-size: 1rem;
     }
   }
 
