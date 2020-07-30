@@ -23,7 +23,7 @@
 
   &__text {
     padding: 1rem 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 
     transform: skewX(12deg);
     @include respond(phone) {

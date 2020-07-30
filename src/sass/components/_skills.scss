@@ -16,7 +16,8 @@
     }
 
     @include respond(phone) {
-      margin: 2rem 3rem;
+      margin: 2rem 0.5rem;
+      padding: 1rem 1rem 2rem 1rem;
     }
 
     @include respond(big-desktop) {
@@ -39,5 +40,6 @@
   padding: 0.2rem 1rem;
   margin: 0.2rem;
   border-radius: 1rem;
+  font-size: 2rem;
   font-weight: 300;
 }
