@@ -1,3 +1,42 @@
+.a-bounce-small {
+  animation: bounce 2s ease-in-out 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0);
+  }
+  5% {
+    transform: translateY(-0.4rem);
+  }
+  8% {
+    transform: translateY(-0.8rem);
+  }
+  10% {
+    transform: translateY(-1.2rem);
+  }
+
+  20% {
+    transform: translate(0);
+  }
+
+  30% {
+    transform: translateY(-0.8rem);
+  }
+
+  40% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translateY(-0.4rem);
+  }
+
+  60% {
+    transform: translate(0);
+  }
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
