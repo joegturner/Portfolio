@@ -22,7 +22,7 @@
   }
 
   &__text {
-    padding: 1rem 5rem;
+    padding: 1rem 1rem;
     font-size: 2rem;
 
     transform: skewX(12deg);
@@ -80,6 +80,10 @@
       rgba(80, 215, 252, 0.8),
       rgba(255, 249, 223, 0)
     );
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &__title {

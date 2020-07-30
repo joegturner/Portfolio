@@ -83,7 +83,7 @@ html {
       font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 37.5%; } }
+      font-size: 43.75%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -205,7 +205,7 @@ u-margin-top-huge {
       transform: skewX(0);
       width: 100%; } }
   .about__text {
-    padding: 1rem 5rem;
+    padding: 1rem 1rem;
     font-size: 2rem;
     transform: skewX(12deg); }
     @media (max-width: 37.5em) {
@@ -245,6 +245,9 @@ u-margin-top-huge {
     padding: 1rem;
     width: 65%;
     background-image: linear-gradient(to right bottom, rgba(255, 249, 223, 0.9), rgba(80, 215, 252, 0.8), rgba(255, 249, 223, 0)); }
+    @media (max-width: 37.5em) {
+      .education__box {
+        width: 100%; } }
   .education__title {
     font-size: 3rem;
     font-weight: 300; }
@@ -342,15 +345,6 @@ u-margin-top-huge {
   -moz-perspective: 150rem;
   position: relative;
   font-size: 0; }
-  @media (max-width: 75em) {
-    .card {
-      height: 20vw; } }
-  @media (max-width: 56.25em) {
-    .card {
-      height: 240px; } }
-  @media (max-width: 37.5em) {
-    .card {
-      height: 180px; } }
   .card__side {
     height: 25rem;
     position: absolute;
@@ -367,15 +361,6 @@ u-margin-top-huge {
     transform-origin: top center;
     will-change: transform;
     transition: all 0.6s ease-in-out; }
-    @media (max-width: 75em) {
-      .card__side {
-        height: 20vw; } }
-    @media (max-width: 56.25em) {
-      .card__side {
-        height: 240px; } }
-    @media (max-width: 37.5em) {
-      .card__side {
-        height: 180px; } }
     .card__side--front {
       background-color: rgba(80, 215, 252, 0.9); }
     .card__side--back {
@@ -402,17 +387,6 @@ u-margin-top-huge {
   .card:hover .card__side--back {
     transform: translateY(-2rem) rotateY(0) scale(1.2); }
     .card:hover .card__side--back::after {
-      transform: translateY(0%);
-      transition: all 0.6s cubic-bezier(0.52, 0.08, 0.81, 1.06); }
-  .card:active .card__side {
-    box-shadow: 0 2rem 4rem rgba(36, 39, 43, 0.4); }
-  .card:active .card__side--front {
-    transform: translateY(-2rem) rotateY(-180deg) scale(1.2); }
-    .card:active .card__side--front::after {
-      transform: translateY(0%); }
-  .card:active .card__side--back {
-    transform: translateY(-2rem) rotateY(0) scale(1.2); }
-    .card:active .card__side--back::after {
       transform: translateY(0%);
       transition: all 0.6s cubic-bezier(0.52, 0.08, 0.81, 1.06); }
   .card__image {
@@ -451,10 +425,22 @@ u-margin-top-huge {
     margin: 0.2rem;
     border-radius: 1rem;
     font-weight: 300; }
-    @media (max-width: 37.5em) {
-      .card__techs > li {
-        width: 11rem;
-        font-size: 1.3rem; } }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto; }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card:hover .card__side--back {
+        transform: translateY(0) rotateY(0) scale(1); }
+      .card__side {
+        height: auto;
+        position: relative; }
+        .card__side--front {
+          background-color: rgba(80, 215, 252, 0.9); }
+        .card__side--back {
+          transform: rotateY(0); }
+        .card__side--front::after, .card__side--back::after {
+          display: none; } }
 
 .contact {
   width: 80%;
@@ -499,6 +485,8 @@ u-margin-top-huge {
     display: inline-block;
     font-size: 2rem;
     color: #24272b; }
+  .contact__image-box {
+    width: 100%; }
   .contact__image {
     margin: 5rem 0 0 0;
     width: 45rem;
@@ -506,7 +494,7 @@ u-margin-top-huge {
     box-shadow: 0 0.2rem 1rem rgba(255, 255, 255, 0.4); }
     @media (max-width: 37.5em) {
       .contact__image {
-        width: 35rem; } }
+        width: 80%; } }
   .contact__message {
     font-size: 3rem;
     letter-spacing: 2rem;
@@ -654,16 +642,10 @@ u-margin-top-huge {
   width: 100%;
   background-color: #24272b;
   padding: 0.3rem;
-  transition: all 0.3s ease;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 100%, 70% 0, 30% 0, 25% 100%, 0 100%); }
+  transition: all 0.3s ease; }
   @media (max-width: 75em) {
     .nav {
-      height: 7rem;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 85% 0, 15% 0, 10% 100%, 0 100%); } }
-  @media (max-width: 37.5em) {
-    .nav {
-      height: 7rem;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 100%, 80% 0, 20% 0, 15% 100%, 0 100%); } }
+      height: 7rem; } }
   .nav__left {
     padding: 0.1rem 2rem;
     float: left;
@@ -674,27 +656,11 @@ u-margin-top-huge {
         width: 15%;
         padding: 0.1rem 0.8rem; } }
   .nav__logo {
-    width: 3rem; }
+    width: 3rem;
+    margin: 0 3rem; }
     @media (max-width: 75em) {
       .nav__logo {
         transform: translateY(1.3rem); } }
-  .nav__message {
-    position: absolute;
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1rem; }
-    @media (max-width: 75em) {
-      .nav__message {
-        display: none; } }
-  .nav__message--mobile {
-    display: none;
-    color: #fff;
-    text-decoration: none;
-    margin: 0 0.5rem;
-    transform: translateY(0.6rem); }
-    @media (max-width: 75em) {
-      .nav__message--mobile {
-        display: inline-block; } }
   .nav__right {
     padding: 0.1rem 0.1rem;
     float: right;
@@ -717,6 +683,9 @@ u-margin-top-huge {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none; }
+    @media (max-width: 75em) {
+      .nav__link {
+        display: inline-block; } }
   .nav__button {
     position: fixed;
     top: 0;
@@ -766,13 +735,36 @@ u-margin-top-huge {
   .nav__checkbox:checked + .nav__button .nav__icon::after {
     top: 0;
     transform: rotate(-135deg); }
-  .nav__checkbox:checked ~ .nav {
-    animation: growNav 0.2s ease;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-  .nav__checkbox:checked ~ .nav .nav__right {
-    width: 80%; }
-  .nav__checkbox:checked ~ .nav .nav__links {
-    display: inline; }
+  .nav-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 12rem;
+    height: 4rem;
+    margin: 0 auto;
+    background-color: #24272b;
+    z-index: 500;
+    transition: all 0.8s; }
+  .nav-mobile {
+    position: fixed;
+    right: 0;
+    top: 7rem;
+    z-index: 2000;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s; }
+  .nav-mobile__links {
+    text-align: center; }
+  .nav-mobile__link {
+    display: block;
+    font-size: 2rem;
+    color: #ebfbff;
+    text-decoration: none; }
+  .nav__checkbox:checked ~ .nav-background {
+    transform: scaleY(11); }
+  .nav__checkbox:checked ~ .nav-mobile {
+    opacity: 1;
+    width: 12rem; }
 
 .section-projects {
   background-color: #ebfbff;

@@ -9,43 +9,30 @@
 
   padding: 0.3rem;
   transition: all 0.3s ease;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    75% 100%,
-    70% 0,
-    30% 0,
-    25% 100%,
-    0 100%
-  );
+  // clip-path: polygon(
+  //   0 0,
+  //   100% 0,
+  //   100% 100%,
+  //   75% 100%,
+  //   70% 0,
+  //   30% 0,
+  //   25% 100%,
+  //   0 100%
+  // );
 
   @include respond(tab-land) {
     height: 7rem;
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 100%,
-      90% 100%,
-      85% 0,
-      15% 0,
-      10% 100%,
-      0 100%
-    );
-  }
 
-  @include respond(phone) {
-    height: 7rem;
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% 100%,
-      85% 100%,
-      80% 0,
-      20% 0,
-      15% 100%,
-      0 100%
-    );
+    // clip-path: polygon(
+    //   0 0,
+    //   100% 0,
+    //   100% 100%,
+    //   90% 100%,
+    //   85% 0,
+    //   15% 0,
+    //   10% 100%,
+    //   0 100%
+    // );
   }
 
   &__left {
@@ -62,32 +49,10 @@
 
   &__logo {
     width: 3rem;
+    margin: 0 3rem;
 
     @include respond(tab-land) {
       transform: translateY(1.3rem);
-    }
-  }
-
-  &__message {
-    position: absolute;
-    color: $color-white;
-    text-decoration: none;
-    margin: 0 1rem;
-
-    @include respond(tab-land) {
-      display: none;
-    }
-  }
-
-  &__message--mobile {
-    display: none;
-    color: $color-white;
-    text-decoration: none;
-    margin: 0 0.5rem;
-    transform: translateY(0.6rem);
-
-    @include respond(tab-land) {
-      display: inline-block;
     }
   }
 
@@ -121,6 +86,10 @@
     color: $color-white;
     margin: 0 1rem;
     text-decoration: none;
+
+    @include respond(tab-land) {
+      display: inline-block;
+    }
   }
 
   // for mobile screens
@@ -204,16 +173,46 @@
     transform: rotate(-135deg);
   }
 
-  &__checkbox:checked ~ & {
-    animation: growNav 0.2s ease;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  &-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 12rem;
+    height: 4rem;
+    margin: 0 auto;
+
+    background-color: $color-grey-dark;
+    z-index: 500;
+    transition: all 0.8s;
   }
 
-  &__checkbox:checked ~ & &__right {
-    width: 80%;
+  &-mobile {
+    position: fixed;
+    right: 0;
+    top: 7rem;
+    z-index: 2000;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s;
   }
 
-  &__checkbox:checked ~ & &__links {
-    display: inline;
+  &-mobile__links {
+    text-align: center;
+  }
+
+  &-mobile__link {
+    display: block;
+    font-size: 2rem;
+    color: $color-grey-light;
+    text-decoration: none;
+  }
+
+  &__checkbox:checked ~ &-background {
+    transform: scaleY(11);
+  }
+
+  &__checkbox:checked ~ &-mobile {
+    opacity: 1;
+    width: 12rem;
   }
 }
