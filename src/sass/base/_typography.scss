@@ -10,6 +10,10 @@ body {
   text-transform: uppercase;
   margin: 6rem;
 
+  @include respond(phone) {
+    margin: 1rem;
+  }
+
   &--main {
     color: $color-grey-light;
     display: block;

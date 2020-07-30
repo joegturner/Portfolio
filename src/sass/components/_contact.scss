@@ -79,5 +79,9 @@
     font-size: 3rem;
     letter-spacing: 2rem;
     color: $color-white;
+
+    @include respond(tab-land) {
+      letter-spacing: 1rem;
+    }
   }
 }

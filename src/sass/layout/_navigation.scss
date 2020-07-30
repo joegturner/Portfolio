@@ -59,7 +59,7 @@
   &__right {
     padding: 0.1rem 0.1rem;
     float: right;
-    width: 28%;
+    width: 35%;
     text-align: right;
 
     @include respond(tab-land) {
@@ -82,10 +82,12 @@
   }
 
   &__link {
+    position: relative;
     display: inline-block;
     color: $color-white;
     margin: 0 1rem;
     text-decoration: none;
+    padding: 0.1rem 0.4rem;
 
     @include respond(tab-land) {
       display: inline-block;
@@ -201,6 +203,7 @@
   }
 
   &-mobile__link {
+    position: relative;
     display: block;
     font-size: 2rem;
     z-index: 2100;

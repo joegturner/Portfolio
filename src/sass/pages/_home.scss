@@ -2,7 +2,7 @@
   background-color: $color-grey-light;
   z-index: 50;
   position: relative;
-  padding: 12rem 5rem 20rem 5rem;
+  padding: 10rem 5rem 20rem 5rem;
   margin-top: -6rem;
 
   clip-path: polygon(
@@ -22,6 +22,8 @@
 
   @include respond(tab-port) {
     margin-top: -12rem;
+
+    padding: 12rem 5rem 10rem 5rem;
     clip-path: polygon(
       0 0,
       100% 0,
@@ -53,6 +55,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%);
 
   @include respond(tab-port) {
+    padding: 20rem 5rem 20rem 5rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%);
   }
 }
@@ -85,10 +88,10 @@
   z-index: 20;
   position: relative;
   z-index: 20;
-  padding: 15rem 5rem 10rem 5rem;
-  margin-top: -10rem;
+  padding: 18rem 5rem 10rem 5rem;
+  margin-top: -15rem;
 
   @include respond(phone) {
-    padding: 15rem 2rem 10rem 2rem;
+    padding: 18rem 2rem 10rem 2rem;
   }
 }

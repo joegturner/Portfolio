@@ -92,21 +92,27 @@
     }
   }
 
-  &:active &__side {
-    box-shadow: 0 2rem 4rem rgba($color-black, 0.4);
-  }
-
-  &:active &__side--front {
-    transform: rotateY(-180deg) scale(1.2);
-    &::after {
-      transform: translateY(0%);
+  &__rotate &__side {
+    @include respond(tab-land) {
+      box-shadow: 0 2rem 4rem rgba($color-black, 0.4);
     }
   }
-  &:active &__side--back {
-    transform: rotateY(0) scale(1.2);
-    &::after {
-      transform: translateY(0%);
-      transition: all 0.6s cubic-bezier(0.52, 0.08, 0.81, 1.06);
+
+  &__rotate &__side--front {
+    @include respond(tab-land) {
+      transform: rotateY(-180deg) scale(1.2);
+      &::after {
+        transform: translateY(0%);
+      }
+    }
+  }
+  &__rotate &__side--back {
+    @include respond(tab-land) {
+      transform: rotateY(0) scale(1.2);
+      &::after {
+        transform: translateY(0%);
+        transition: all 0.6s cubic-bezier(0.52, 0.08, 0.81, 1.06);
+      }
     }
   }
 
@@ -164,6 +170,7 @@
 
     &-line {
       display: inline-block;
+      transform: translateY(-0.3rem);
       width: 30%;
       height: 0.1rem;
       margin: 0 1rem;
@@ -187,6 +194,60 @@
     margin: 0.2rem;
     border-radius: 1rem;
     font-weight: 300;
+  }
+
+  @include respond(tab-land) {
+    max-height: 23vw;
+
+    &__side {
+      max-height: 23vw;
+    }
+
+    &__links {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__made-with {
+      &-line {
+        width: 20%;
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    max-height: 60rem;
+    height: 31rem;
+    &__side {
+      max-height: 60rem;
+      height: 31rem;
+
+      &::after {
+        height: 200%;
+      }
+    }
+
+    &__heading {
+      font-size: 2.5rem;
+    }
+
+    &__text {
+      font-size: 2rem;
+    }
+    &__made-with {
+      &-line {
+        width: 30%;
+      }
+
+      &-text {
+        font-size: 2rem;
+      }
+    }
+
+    &__techs > li {
+      font-size: 1.8rem;
+    }
   }
 
   // @include respond(tab-land) {
