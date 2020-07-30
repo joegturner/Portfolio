@@ -5,7 +5,7 @@
   z-index: 1000;
   height: 4rem;
   width: 100%;
-  background-color: rgba($color-black, 0.7);
+  background-color: rgba($color-black, 1);
 
   padding: 0.3rem;
   transition: all 0.3s ease;
@@ -52,14 +52,24 @@
     padding: 0.1rem 2rem;
     float: left;
     width: 27%;
-    text-align: center;
+    text-align: left;
 
     @include respond(tab-land) {
-      width: 10%;
+      width: 15%;
+      padding: 0.1rem 0.8rem;
+    }
+  }
+
+  &__logo {
+    width: 3rem;
+
+    @include respond(tab-land) {
+      transform: translateY(1.3rem);
     }
   }
 
   &__message {
+    position: absolute;
     color: $color-white;
     text-decoration: none;
     margin: 0 1rem;
@@ -73,8 +83,8 @@
     display: none;
     color: $color-white;
     text-decoration: none;
-    margin: 0 1rem;
-    transform: translateY(2rem);
+    margin: 0 0.5rem;
+    transform: translateY(0.6rem);
 
     @include respond(tab-land) {
       display: inline-block;
@@ -196,18 +206,6 @@
 
   &__checkbox:checked ~ & {
     animation: growNav 0.2s ease;
-
-    // clip-path: polygon(
-    //   0 0,
-    //   100% 0,
-    //   100% 100%,
-    //   50% 100%,
-    //   45% 0,
-    //   15% 0,
-    //   10% 100%,
-    //   0 100%
-    // );
-
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
