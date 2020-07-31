@@ -605,9 +605,9 @@ body {
         height: 30rem; } }
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .card {
-      height: 23rem; }
+      height: 25rem; }
       .card__side {
-        height: 23rem; } }
+        height: 25rem; } }
 
 .contact {
   width: 80%;
@@ -657,6 +657,7 @@ body {
   .contact__link-text {
     display: inline-block;
     font-size: 2rem;
+    font-weight: 400;
     color: #24272b; }
     @media (max-width: 37.5em) {
       .contact__link-text {
