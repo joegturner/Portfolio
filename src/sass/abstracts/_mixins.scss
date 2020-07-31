@@ -26,6 +26,7 @@ $breakpoint argument choices:
 - tab-port
 - tab-land
 - big-desktop
+- iphone X
 
 ORDER: base + typography > general layout + grid > page layout > components
 
@@ -54,6 +55,11 @@ ORDER: base + typography > general layout + grid > page layout > components
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5em) {
       //1800px
+      @content;
+    }
+  }
+  @if $breakpoint == iphonex {
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
       @content;
     }
   }

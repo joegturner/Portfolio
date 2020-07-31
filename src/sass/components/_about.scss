@@ -8,12 +8,13 @@
     to right bottom,
     rgba(255, 249, 223, 0.9),
     rgba(80, 215, 252, 0.8),
-    rgba($color-black, 0.4)
+    rgba(255, 249, 223, 0)
   );
   border-radius: 3px;
   padding: 3rem;
   padding-left: 9rem;
   transform: skewX(-12deg);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
 
   @include respond(phone) {
     padding: 0.4rem 0.4rem 0.4rem 5rem;
@@ -74,6 +75,7 @@
     margin: 3rem auto;
     padding: 1rem;
     width: 65%;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
     background-image: linear-gradient(
       to right bottom,
       rgba(255, 249, 223, 0.9),

@@ -1,3 +1,9 @@
+.u-anchor {
+  @include respond(tab-land) {
+    margin-bottom: 10rem;
+  }
+}
+
 .u-center-text {
   text-align: center !important;
 }

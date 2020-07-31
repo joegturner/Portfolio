@@ -10,6 +10,7 @@ $breakpoint argument choices:
 - tab-port
 - tab-land
 - big-desktop
+- iphone X
 
 ORDER: base + typography > general layout + grid > page layout > components
 
@@ -17,26 +18,23 @@ ORDER: base + typography > general layout + grid > page layout > components
 */
 /** For individual back grounds**/
 /** For alternating backgrounds **/
-.a-bounce-small {
-  animation: bounce 2s ease-in-out 2s infinite; }
-
 @keyframes bounce {
   0% {
     transform: translate(0); }
   5% {
-    transform: translateY(-0.4rem); }
+    transform: translateY(-0.8vh); }
   8% {
-    transform: translateY(-0.8rem); }
+    transform: translateY(-1.6vh); }
   10% {
-    transform: translateY(-1.2rem); }
+    transform: translateY(-2vh); }
   20% {
     transform: translate(0); }
   30% {
-    transform: translateY(-0.8rem); }
+    transform: translateY(-1.6vh); }
   40% {
     transform: translate(0); }
   50% {
-    transform: translateY(-0.4rem); }
+    transform: translateY(-0.8vh); }
   60% {
     transform: translate(0); } }
 
@@ -112,7 +110,8 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #24272b; }
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -143,7 +142,7 @@ body {
         margin-right: -2rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        font-size: 6rem;
+        font-size: 7rem;
         letter-spacing: 1rem;
         margin-right: -1rem; } }
   .heading-primary--sub {
@@ -155,7 +154,7 @@ body {
     margin-right: -1.75rem; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        font-size: 1.5rem;
+        font-size: 2rem;
         letter-spacing: 1rem;
         margin-right: -1rem; } }
 
@@ -192,6 +191,10 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+@media (max-width: 75em) {
+  .u-anchor {
+    margin-bottom: 10rem; } }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -226,11 +229,12 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 6rem;
-  background-image: linear-gradient(to right bottom, rgba(255, 249, 223, 0.9), rgba(80, 215, 252, 0.8), rgba(36, 39, 43, 0.4));
+  background-image: linear-gradient(to right bottom, rgba(255, 249, 223, 0.9), rgba(80, 215, 252, 0.8), rgba(255, 249, 223, 0));
   border-radius: 3px;
   padding: 3rem;
   padding-left: 9rem;
-  transform: skewX(-12deg); }
+  transform: skewX(-12deg);
+  box-shadow: 0 0.5rem 1rem rgba(36, 39, 43, 0.4); }
   @media (max-width: 37.5em) {
     .about {
       padding: 0.4rem 0.4rem 0.4rem 5rem;
@@ -276,6 +280,7 @@ body {
     margin: 3rem auto;
     padding: 1rem;
     width: 65%;
+    box-shadow: 0 0.5rem 1rem rgba(36, 39, 43, 0.4);
     background-image: linear-gradient(to right bottom, rgba(255, 249, 223, 0.9), rgba(80, 215, 252, 0.8), rgba(255, 249, 223, 0)); }
     @media (max-width: 37.5em) {
       .education__box {
@@ -446,8 +451,6 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   font-size: 0; }
-  .card::after {
-    display: none; }
   .card__side {
     height: 25rem;
     position: absolute;
@@ -480,6 +483,18 @@ body {
       background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
       transform: translateY(-50%);
       transition: all 0.65s cubic-bezier(0.18, 0.9, 0.58, 1); }
+  .card:hover .card__side {
+    z-index: 5;
+    box-shadow: 0 2rem 4rem rgba(36, 39, 43, 0.4); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg) scale(1.2); }
+    .card:hover .card__side--front::after {
+      transform: translateY(0%); }
+  .card:hover .card__side--back {
+    transform: rotateY(0) scale(1.2); }
+    .card:hover .card__side--back::after {
+      transform: translateY(0%);
+      transition: all 0.6s cubic-bezier(0.52, 0.08, 0.81, 1.06); }
   @media (max-width: 75em) {
     .card__rotate .card__side {
       z-index: 5;
@@ -587,11 +602,19 @@ body {
       height: 30rem; }
       .card__side {
         height: 30rem; } }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .card {
+      height: 27rem; }
+      .card__side {
+        height: 27rem; } }
 
 .contact {
   width: 80%;
   margin: 0 auto;
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .contact {
+      width: 100%; } }
   .contact__email-box {
     margin: 4rem auto;
     width: 30rem;
@@ -660,7 +683,8 @@ body {
   padding: 1rem 4rem 2rem 4rem;
   margin: 2rem 20rem;
   border-radius: 2rem;
-  background-image: linear-gradient(to right bottom, rgba(255, 249, 223, 0.9), rgba(80, 215, 252, 0.8), rgba(255, 249, 223, 0)); }
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.4);
+  background-image: linear-gradient(to right bottom, rgba(255, 249, 223, 0.9), rgba(80, 215, 252, 0.8), rgba(255, 249, 223, 0.9)); }
   @media (max-width: 56.25em) {
     .skills__box {
       margin: 2rem 10rem; } }
@@ -795,7 +819,8 @@ body {
     color: #c7d3e2;
     font-style: italic; }
   .header__scroll-icon {
-    width: 6rem; }
+    width: 6rem;
+    animation: bounce 2s ease-in-out 2s infinite; }
 
 .nav {
   position: fixed;
@@ -804,7 +829,7 @@ body {
   z-index: 1000;
   height: 4rem;
   width: 100%;
-  background-color: #24272b;
+  background-color: rgba(36, 39, 43, 0.6);
   padding: 0.3rem;
   transition: all 0.3s ease; }
   @media (max-width: 75em) {
@@ -903,12 +928,14 @@ body {
     transform: rotate(-135deg); }
   .nav-background {
     position: fixed;
-    top: 0;
+    top: 7rem;
     right: 0;
     width: 12rem;
-    height: 5rem;
+    height: 4rem;
     margin: 0 auto;
-    background-color: rgba(36, 39, 43, 0.6);
+    transform-origin: top;
+    background-color: #24272b;
+    opacity: 0;
     z-index: 500;
     transition: all 0.8s; }
   .nav-mobile {
@@ -930,7 +957,8 @@ body {
     text-decoration: none;
     margin: 1rem; }
   .nav__checkbox:checked ~ .nav-background {
-    transform: scaleY(11); }
+    opacity: 0.6;
+    transform: scaleY(5.5); }
   .nav__checkbox:checked ~ .nav-mobile {
     opacity: 1;
     width: 12rem; }

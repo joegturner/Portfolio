@@ -3,6 +3,10 @@
   margin: 0 auto;
   text-align: center;
 
+  @include respond(phone) {
+    width: 100%;
+  }
+
   &__email-box {
     margin: 4rem auto;
     width: 30rem;

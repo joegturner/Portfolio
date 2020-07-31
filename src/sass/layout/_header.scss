@@ -53,5 +53,6 @@
 
   &__scroll-icon {
     width: 6rem;
+    animation: bounce 2s ease-in-out 2s infinite;
   }
 }
