@@ -1,6 +1,6 @@
-# Hello!
+# Welcome to my GitHub!
 
-- Thank you for visiting my Github Portfolio repo!
+- Thank you for visiting my Github Portfolio repo
 - I am actively seeking JavaScript developer opportunities. I recently finished my online Fullstack JavaScript techdegree and excited to contribute!
 
 ## Feel free to contact me
