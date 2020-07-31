@@ -1,3 +1,5 @@
+import smoothscroll from "smoothscroll-polyfill";
+
 const cards = document.getElementsByClassName("card");
 const body = document.getElementsByTagName("body")[0];
 const navButton = document.getElementsByClassName("nav__checkbox")[0];
@@ -5,6 +7,9 @@ const navButton = document.getElementsByClassName("nav__checkbox")[0];
 // Animations for mobile touch screens
 // - card rotation
 // - navigation menu close
+// - smooth scrolling
+
+smoothscroll.polyfill();
 
 // add rotate to card if touched
 for (let i = 0; i < cards.length; i++) {
