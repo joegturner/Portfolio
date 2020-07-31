@@ -5,7 +5,6 @@ const navButton = document.getElementsByClassName("nav__checkbox")[0];
 // Animations for mobile touch screens
 // - card rotation
 // - navigation menu close
-// - smooth scrolling
 
 // add rotate to card if touched
 for (let i = 0; i < cards.length; i++) {
@@ -14,15 +13,6 @@ for (let i = 0; i < cards.length; i++) {
     if (card) {
       card.classList.add("card__rotate");
     }
-  });
-}
-
-// smooth scroll to anchor tags on mobile
-function scrollTo(element) {
-  window.scroll({
-    behavior: "smooth",
-    left: 0,
-    top: element.offsetTop,
   });
 }
 
@@ -37,13 +27,6 @@ body.addEventListener("click", (event) => {
   }
 
   // NAV BUTTON
-  // call smooth scroll to target anchor tag
-  const targetAnchor = document.getElementById(
-    event.target.innerHTML.toLowerCase()
-  );
-  if (targetAnchor) {
-    scrollTo(targetAnchor);
-  }
 
   // close nav button pop up in mobile
   const navClicked =
