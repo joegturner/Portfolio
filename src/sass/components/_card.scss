@@ -197,10 +197,10 @@
   }
 
   @include respond(tab-land) {
-    max-height: 23vw;
+    height: 20vw;
 
     &__side {
-      max-height: 23vw;
+      height: 20vw;
     }
 
     &__links {
@@ -217,11 +217,9 @@
   }
 
   @include respond(tab-port) {
-    max-height: 60rem;
-    height: 31rem;
+    height: 30rem;
     &__side {
-      max-height: 60rem;
-      height: 31rem;
+      height: 30rem;
 
       &::after {
         height: 200%;
@@ -254,13 +252,6 @@
     height: 30rem;
     &__side {
       height: 30rem;
-    }
-  }
-
-  @include respond(iphonex) {
-    height: 27rem;
-    &__side {
-      height: 27rem;
     }
   }
 

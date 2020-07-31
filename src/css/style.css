@@ -11,7 +11,6 @@ $breakpoint argument choices:
 - tab-land
 - desktop
 - big-desktop
-- iphone X
 
 ORDER: base + typography > general layout + grid > page layout > components
 
@@ -573,9 +572,9 @@ body {
     font-weight: 300; }
   @media (max-width: 75em) {
     .card {
-      max-height: 23vw; }
+      height: 20vw; }
       .card__side {
-        max-height: 23vw; }
+        height: 20vw; }
       .card__links {
         width: 100%;
         margin: 0 auto;
@@ -584,11 +583,9 @@ body {
         width: 20%; } }
   @media (max-width: 56.25em) {
     .card {
-      max-height: 60rem;
-      height: 31rem; }
+      height: 30rem; }
       .card__side {
-        max-height: 60rem;
-        height: 31rem; }
+        height: 30rem; }
         .card__side::after {
           height: 200%; }
       .card__heading {
@@ -606,11 +603,6 @@ body {
       height: 30rem; }
       .card__side {
         height: 30rem; } }
-  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-    .card {
-      height: 27rem; }
-      .card__side {
-        height: 27rem; } }
 
 .contact {
   width: 80%;
@@ -981,7 +973,7 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 97%, 70% 97%, 60% 100%, 40% 100%, 30% 97%, 20% 97%, 10% 100%, 0 100%); } }
   @media (max-width: 37.5em) {
     .section-projects {
-      padding: 12rem 1rem 20rem 1rem; } }
+      padding: 12rem 1rem 13rem 1rem; } }
 
 .section-skills {
   text-align: center;
