@@ -11,6 +11,7 @@ $breakpoint argument choices:
 - tab-land
 - desktop
 - big-desktop
+- iphone X
 
 ORDER: base + typography > general layout + grid > page layout > components
 
@@ -228,23 +229,22 @@ body {
 .about {
   width: 80%;
   margin: 0 auto;
-  padding: 6rem;
   background-image: linear-gradient(to right bottom, rgba(255, 249, 223, 0.9), rgba(80, 215, 252, 0.8), rgba(255, 249, 223, 0));
   border-radius: 3px;
-  padding: 3rem;
+  padding: 1rem 9rem;
   padding-left: 9rem;
   transform: skewX(-12deg);
   box-shadow: 0 0.5rem 1rem rgba(36, 39, 43, 0.4); }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .about {
-      padding: 0.4rem 0.4rem 0.4rem 5rem;
+      padding: 0.4rem 1rem 0.4rem 5rem;
       transform: skewX(0);
       width: 100%; } }
   .about__text {
     padding: 1rem 1rem;
     font-size: 2.5rem;
     transform: skewX(12deg); }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .about__text {
         transform: skewX(0); } }
   .about__shape {
@@ -259,7 +259,7 @@ body {
     clip-path: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%); }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .about__shape {
         transform: translateX(-3rem) skewX(0); } }
   .about__image {
@@ -583,9 +583,9 @@ body {
         width: 20%; } }
   @media (max-width: 56.25em) {
     .card {
-      height: 30rem; }
+      height: 31rem; }
       .card__side {
-        height: 30rem; }
+        height: 31rem; }
         .card__side::after {
           height: 200%; }
       .card__heading {
@@ -600,9 +600,14 @@ body {
         font-size: 1.8rem; } }
   @media (max-width: 37.5em) {
     .card {
-      height: 20rem; }
+      height: 30rem; }
       .card__side {
-        height: 20rem; } }
+        height: 30rem; } }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .card {
+      height: 23rem; }
+      .card__side {
+        height: 23rem; } }
 
 .contact {
   width: 80%;
@@ -922,25 +927,14 @@ body {
   .nav__checkbox:checked + .nav__button .nav__icon::after {
     top: 0;
     transform: rotate(-135deg); }
-  .nav-background {
-    position: fixed;
-    top: 7rem;
-    right: 0;
-    width: 12rem;
-    height: 4rem;
-    margin: 0 auto;
-    transform-origin: top;
-    background-color: #24272b;
-    opacity: 0;
-    z-index: 500;
-    transition: all 0.8s; }
   .nav-mobile {
     position: fixed;
-    right: 0;
     top: 7rem;
+    right: 1rem;
     z-index: 2000;
     opacity: 0;
     width: 0;
+    background-color: #24272b;
     transition: all 0.8s; }
   .nav-mobile__links {
     text-align: center; }
@@ -952,12 +946,9 @@ body {
     color: #ebfbff;
     text-decoration: none;
     margin: 1rem; }
-  .nav__checkbox:checked ~ .nav-background {
-    opacity: 0.6;
-    transform: scaleY(5.5); }
   .nav__checkbox:checked ~ .nav-mobile {
-    opacity: 1;
-    width: 12rem; }
+    opacity: 0.6;
+    width: 10rem; }
 
 .section-projects {
   background-color: #ebfbff;
@@ -965,12 +956,12 @@ body {
   position: relative;
   padding: 10rem 5rem 20rem 5rem;
   margin-top: -6rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 90%, 70% 90%, 60% 100%, 40% 100%, 30% 90%, 20% 90%, 10% 100%, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 10% 100%, 0 90%); }
   @media (max-width: 56.25em) {
     .section-projects {
       margin-top: -12rem;
       padding: 12rem 5rem 10rem 5rem;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 80% 97%, 70% 97%, 60% 100%, 40% 100%, 30% 97%, 20% 97%, 10% 100%, 0 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 98%, 90% 100%, 10% 100%, 0 98%); } }
   @media (max-width: 37.5em) {
     .section-projects {
       padding: 12rem 1rem 13rem 1rem; } }
@@ -980,13 +971,13 @@ body {
   background-color: #24272b;
   position: relative;
   z-index: 40;
-  padding: 20rem 5rem 30rem 5rem;
-  margin-top: -18rem;
+  padding: 10rem 5rem 30rem 5rem;
+  margin-top: -10rem;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%); }
   @media (max-width: 56.25em) {
     .section-skills {
-      padding: 20rem 5rem 20rem 5rem;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%); } }
+      padding: 10rem 5rem 20rem 5rem;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 95%, 10% 95%, 0 100%); } }
 
 .section-about {
   background-color: #ebfbff;
@@ -994,7 +985,7 @@ body {
   z-index: 30;
   padding: 10rem 5rem 10rem 5rem;
   margin-top: -20rem;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 90% 100%, 10% 100%, 0 90%); }
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 90% 100%, 90% 100%, 10% 100%, 0 95%); }
   @media (max-width: 37.5em) {
     .section-about {
       padding: 10rem 2rem 10rem 2rem; } }
@@ -1003,9 +994,8 @@ body {
   background-color: #24272b;
   z-index: 20;
   position: relative;
-  z-index: 20;
-  padding: 18rem 5rem 10rem 5rem;
-  margin-top: -15rem; }
+  padding: 10rem 5rem 10rem 5rem;
+  margin-top: -10rem; }
   @media (max-width: 37.5em) {
     .section-contact {
-      padding: 18rem 2rem 10rem 2rem; } }
+      padding: 10rem 2rem 10rem 2rem; } }

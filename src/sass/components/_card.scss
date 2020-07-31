@@ -217,9 +217,9 @@
   }
 
   @include respond(tab-port) {
-    height: 30rem;
+    height: 31rem;
     &__side {
-      height: 30rem;
+      height: 31rem;
 
       &::after {
         height: 200%;
@@ -249,9 +249,16 @@
   }
 
   @include respond(phone) {
-    height: 20rem;
+    height: 30rem;
     &__side {
-      height: 20rem;
+      height: 30rem;
+    }
+  }
+
+  @include respond(iphonex) {
+    height: 23rem;
+    &__side {
+      height: 23rem;
     }
   }
 

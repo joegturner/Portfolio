@@ -175,27 +175,15 @@
     transform: rotate(-135deg);
   }
 
-  &-background {
-    position: fixed;
-    top: 7rem;
-    right: 0;
-    width: 12rem;
-    height: 4rem;
-    margin: 0 auto;
-    transform-origin: top;
-    background-color: $color-grey-dark;
-    opacity: 0;
-    z-index: 500;
-    transition: all 0.8s;
-  }
-
   &-mobile {
     position: fixed;
-    right: 0;
     top: 7rem;
+    right: 1rem;
+
     z-index: 2000;
     opacity: 0;
     width: 0;
+    background-color: $color-grey-dark;
     transition: all 0.8s;
   }
 
@@ -213,13 +201,8 @@
     margin: 1rem;
   }
 
-  &__checkbox:checked ~ &-background {
-    opacity: 0.6;
-    transform: scaleY(5.5);
-  }
-
   &__checkbox:checked ~ &-mobile {
-    opacity: 1;
-    width: 12rem;
+    opacity: 0.6;
+    width: 10rem;
   }
 }
