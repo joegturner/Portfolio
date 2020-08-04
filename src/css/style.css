@@ -792,7 +792,8 @@ body {
   z-index: 100;
   position: relative;
   background-color: #24272b;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 80% 90%, 65% 100%, 35% 100%, 20% 90%, 0 90%); }
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 80% 90%, 65% 100%, 35% 100%, 20% 90%, 0 90%);
+  text-align: center; }
   .header__box-main {
     position: absolute;
     width: 80%;

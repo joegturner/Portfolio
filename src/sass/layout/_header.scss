@@ -13,6 +13,7 @@
     20% 90%,
     0 90%
   );
+  text-align: center;
   &__box-main {
     position: absolute;
 
@@ -22,6 +23,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 5rem 0;
+
     @include respond(tab-land) {
       margin-top: 8rem;
     }
