@@ -52,6 +52,10 @@
     @include respond(tab-port) {
       transform: translateX(-3rem);
     }
+    @include respond(phone) {
+      float: none;
+      margin: 3rem auto 1rem auto;
+    }
   }
 
   &__image {

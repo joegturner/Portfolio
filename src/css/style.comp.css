@@ -278,6 +278,10 @@ body {
     @media (max-width: 56.25em) {
       .about__shape {
         transform: translateX(-3rem); } }
+    @media (max-width: 37.5em) {
+      .about__shape {
+        float: none;
+        margin: 3rem auto 1rem auto; } }
   .about__image {
     height: 100%;
     background-color: #50d7fc; }
@@ -784,7 +788,7 @@ body {
     .skills__box {
       margin: 2rem 0.5rem;
       padding: 1rem 1rem 2rem 1rem;
-      width: 40rem; } }
+      width: 90%; } }
   @media (min-width: 112.5em) {
     .skills__box {
       margin: 2rem 30rem; } }
@@ -975,7 +979,7 @@ body {
   .nav__button {
     position: fixed;
     top: 0;
-    right: 4rem;
+    right: 2.5rem;
     z-index: 2500;
     display: none;
     width: 5rem;
@@ -1025,12 +1029,13 @@ body {
   .nav-mobile {
     position: fixed;
     top: 0;
-    right: 1.5rem;
+    right: 0;
     padding-top: 6.5rem;
     z-index: 2000;
     opacity: 0;
     width: 0;
     background-color: #24272b;
+    box-shadow: 0 1rem 3rem rgba(36, 39, 43, 0.2);
     transition: all 0.8s; }
   .nav-mobile__links {
     text-align: center; }
@@ -1074,6 +1079,10 @@ body {
   grid-gap: 6rem;
   align-items: start;
   margin-bottom: -2px; }
+  @media (max-width: 56.25em) {
+    .section-details {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content); } }
 
 .details-end {
   height: 15vh;
@@ -1123,6 +1132,9 @@ body {
 .section-about {
   background-color: #ebfbff;
   padding: 5rem 5rem; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 0 2rem; } }
 
 .about-end {
   height: 15vh;

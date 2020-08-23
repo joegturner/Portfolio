@@ -68,7 +68,7 @@
   &__button {
     position: fixed;
     top: 0;
-    right: 4rem;
+    right: 2.5rem;
     z-index: 2500;
 
     display: none;
@@ -95,7 +95,6 @@
   }
   &__icon {
     position: relative;
-
     margin-top: 2.2rem;
 
     &,
@@ -148,12 +147,13 @@
   &-mobile {
     position: fixed;
     top: 0;
-    right: 1.5rem;
+    right: 0;
     padding-top: 6.5rem;
     z-index: 2000;
     opacity: 0;
     width: 0;
     background-color: $color-grey-dark;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
 
     transition: all 0.8s;
   }
