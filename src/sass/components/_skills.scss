@@ -1,24 +1,29 @@
 .skills {
   &__box {
     display: inline-block;
+    width: 60rem;
     padding: 1rem 4rem 2rem 4rem;
     margin: 2rem 20rem;
     border-radius: 2rem;
     box-shadow: 0 0.5rem 1rem rgba($color-white, 0.4);
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(255, 249, 223, 0.9),
-      rgba(80, 215, 252, 0.8),
-      rgba(255, 249, 223, 0.9)
-    );
+    border-top: 10px solid $color-primary;
+    background-color: $color-grey-light;
+    // background-image: linear-gradient(
+    //   to right bottom,
+    //   rgba(255, 249, 223, 0.9),
+    //   rgba(80, 215, 252, 0.8),
+    //   rgba(255, 249, 223, 0.9)
+    // );
 
     @include respond(tab-port) {
+      width: 55rem;
       margin: 2rem 10rem;
     }
 
     @include respond(phone) {
       margin: 2rem 0.5rem;
       padding: 1rem 1rem 2rem 1rem;
+      width: 40rem;
     }
 
     @include respond(big-desktop) {
@@ -43,4 +48,5 @@
   border-radius: 1rem;
   font-size: 2rem;
   font-weight: 300;
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
 }

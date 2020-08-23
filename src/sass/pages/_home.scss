@@ -1,24 +1,54 @@
-.section-intro {
-  background-color: $color-grey-light;
-  padding: 15rem 2rem 5rem 2rem;
+.header-end {
+  height: 15vh;
+  width: 100%;
+  background-color: $color-grey-dark;
+
+  clip-path: polygon(20% 0, 80% 0, 65% 98%, 35% 98%);
+
+  @include respond(tab-port) {
+    height: 10vh;
+  }
+}
+
+.details-start {
+  height: 15vh;
+  background-color: $color-grey-dark;
+  clip-path: polygon(35% 0, 65% 0, 80% 100%, 20% 100%);
+  margin-bottom: -1px;
+  @include respond(tab-port) {
+    height: 10vh;
+  }
+}
+.section-details {
+  background-color: $color-grey-dark;
+  padding: 10rem 2rem;
   min-height: 10vh;
-  border-bottom: 1px solid $color-grey-dark;
-  margin-top: -6rem;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  // grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, min-content);
+
   grid-gap: 6rem;
   align-items: start;
+  margin-bottom: -2px;
 }
+
+.details-end {
+  height: 15vh;
+  background-color: $color-grey-dark;
+  // clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 5%, 30% 5%, 0 100%);
+  clip-path: polygon(20% 0, 80% 0, 65% 100%, 35% 100%);
+  @include respond(tab-port) {
+    height: 10vh;
+  }
+}
+
 .section-projects {
   background-color: $color-grey-light;
-  z-index: 50;
-  position: relative;
-  padding: 2rem 5rem 20rem 5rem;
-  // margin-top: -6rem;
 
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 10% 100%, 0 90%);
+  padding: 5rem;
 
   @include respond(tab-port) {
     // margin-top: -12rem;
@@ -32,52 +62,56 @@
   }
 }
 
+.projects-end {
+  height: 15vh;
+  background-color: $color-grey-dark;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+  margin-bottom: -1px;
+  @include respond(tab-port) {
+    height: 10vh;
+  }
+}
+
 .section-skills {
+  padding: 0 5rem;
   text-align: center;
   background-color: $color-grey-dark;
-  position: relative;
-  z-index: 40;
-  padding: 10rem 5rem 30rem 5rem;
-  margin-top: -10rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%);
+  margin-bottom: -2px;
 
   @include respond(tab-port) {
-    padding: 10rem 5rem 20rem 5rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 95%, 10% 95%, 0 100%);
+    padding: 0 2rem;
+  }
+}
+
+.skills-end {
+  height: 15vh;
+  background-color: $color-grey-dark;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  @include respond(tab-port) {
+    height: 10vh;
   }
 }
 
 .section-about {
   background-color: $color-grey-light;
+  padding: 5rem 5rem;
+}
 
-  position: relative;
-  z-index: 30;
-  padding: 10rem 5rem 10rem 5rem;
-  margin-top: -20rem;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 95%,
-    90% 100%,
-    90% 100%,
-    10% 100%,
-    0 95%
-  );
-
-  @include respond(phone) {
-    padding: 10rem 2rem 10rem 2rem;
+.about-end {
+  height: 15vh;
+  background-color: $color-grey-dark;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+  margin-bottom: -2px;
+  @include respond(tab-port) {
+    height: 10vh;
   }
 }
 
 .section-contact {
   background-color: $color-grey-dark;
-
-  z-index: 20;
-  position: relative;
-  padding: 10rem 5rem 10rem 5rem;
-  margin-top: -10rem;
+  padding: 0 5rem 5rem 5rem;
 
   @include respond(phone) {
-    padding: 10rem 2rem 10rem 2rem;
+    padding: 10rem 1rem 10rem 1rem;
   }
 }

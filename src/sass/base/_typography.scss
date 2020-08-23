@@ -7,45 +7,31 @@ body {
 }
 
 .heading-primary {
-  text-transform: uppercase;
-  margin: 6rem;
-
   @include respond(phone) {
-    margin: 1rem;
   }
 
   &--main {
     color: $color-grey-light;
-    display: block;
+
     font-size: 7rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
-    margin-right: -3.5rem;
-
-    @include respond(tab-land) {
-      letter-spacing: 2rem;
-      margin-right: -2rem;
-    }
+    letter-spacing: 1rem;
+    // margin-right: -1rem;
 
     @include respond(phone) {
       font-size: 7rem;
-      letter-spacing: 1rem;
-      margin-right: -1rem;
     }
   }
 
   &--sub {
     color: $color-white;
-    display: block;
-    font-size: 2rem;
+
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 1.75rem;
-    margin-right: -1.75rem;
+    letter-spacing: 0.5rem;
 
     @include respond(phone) {
       font-size: 2rem;
-      letter-spacing: 1rem;
-      margin-right: -1rem;
     }
   }
 }
@@ -64,13 +50,14 @@ body {
 
 .heading-section {
   text-align: center;
-  text-transform: uppercase;
-  margin: 4rem 0;
+  // text-transform: uppercase;
+
   color: $color-black;
   font-size: 5rem;
   font-weight: 400;
-  letter-spacing: 1.75rem;
-  margin-right: -1.75rem;
+  letter-spacing: 1rem;
+
+  margin-bottom: 4rem;
 
   @include respond(phone) {
     font-size: 4rem;
@@ -92,4 +79,11 @@ body {
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+}
+
+.text--light {
+  color: $color-grey-light;
+}
+.text--dark {
+  color: $color-black;
 }

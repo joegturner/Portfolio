@@ -54,9 +54,9 @@
 
       <div class="nav">
         <div class="nav__left">
-          <a href="">
+          <!-- <a href="">
             <img src="src/images/logo.png" alt="Logo" class="nav__logo" />
-          </a>
+          </a> -->
         </div>
 
         <div class="nav__right">
@@ -79,16 +79,16 @@
           </ul>
         </div>
       </div>
+
       <header class="header">
         <div id="top"></div>
         <div class="dot"></div>
         <div class="header__box-main">
-          <h1 class="heading-primary">
-            <span class="heading-primary--main">Joe Turner</span>
-            <span class="heading-primary--sub u-margin-top-medium">
-              JavaScript Developer
-            </span>
-          </h1>
+          <h1 class="heading-primary heading-primary--main">Hi, I'm Joe</h1>
+          <h3 class="heading-primary heading-primary--sub u-margin-top-medium">
+            JavaScript Developer
+          </h3>
+
           <p class="heading-secondary u-margin-top-small">
             <i class="header__loc-icon icon-basic-geolocalize-01"></i>
             <span>New York City</span>
@@ -104,51 +104,58 @@
           />
         </div>
       </header>
+      <div class="header-end"></div>
 
       <main>
-        <section class="section-intro">
-          <div class="intro">
-            <svg class="intro__icon">
+        <div class="details-start"></div>
+        <section class="section-details">
+          <div class="details details--1">
+            <svg class="details__icon">
               <use
                 xlink:href="src/images/svg/sprite.svg#icon-node-dot-js"
               ></use>
             </svg>
-            <h4 class="heading-4">Skilled fullstack JS developer</h4>
-            <p class="intro__text">
+            <h4 class="heading-4 text--light">
+              Fullstack JS Developer
+            </h4>
+            <p class="details__text">
               Excited to contribute using the skills I acquired from my
               Fullstack JavaScript techdegree, Advanced CSS course, and various
               projects.
             </p>
           </div>
 
-          <div class="intro">
-            <svg class="intro__icon">
+          <div class="details details--2">
+            <svg class="details__icon">
               <use
                 xlink:href="src/images/svg/sprite.svg#icon-document-code"
               ></use>
             </svg>
-            <h4 class="heading-4">Efficient and Responsive Designs</h4>
-            <p class="intro__text">
-              My designs are responsive on all screens and device types. I
-              strive to write clean and efficient code, so that other coders and
-              also my future self can follow.
+            <h4 class="heading-4 text--light">
+              Front and Back-End Fluidity
+            </h4>
+            <p class="details__text">
+              My front-end designs are clean and responsive on all screens and
+              device types. I strive to write efficient and readable back-end
+              code.
             </p>
           </div>
 
-          <div class="intro">
-            <svg class="intro__icon">
+          <div class="details details--3">
+            <svg class="details__icon">
               <use xlink:href="src/images/svg/sprite.svg#icon-tools"></use>
             </svg>
-            <h4 class="heading-4">Experienced Engineer</h4>
-            <p class="intro__text">
+            <h4 class="heading-4 text--light">Experienced Engineer</h4>
+            <p class="details__text">
               A decade of automation control engineering and consulting
-              experience has fostered the professional, team player, and leader
-              within me.
+              experience have developed the professional, team player, and
+              leader within me.
             </p>
           </div>
         </section>
+        <div id="projects" class="u-anchor"></div>
+        <div class="details-end"></div>
         <section class="section-projects">
-          <div id="projects" class="u-anchor"></div>
           <h2 class="heading-section heading-section--dark">Projects</h2>
 
           <!--Row 1-->
@@ -690,9 +697,10 @@
             </div>
           </div>
         </section>
+        <div id="skills" class="u-anchor"></div>
+        <div class="projects-end"></div>
 
         <section class="section-skills">
-          <div id="skills" class="u-anchor"></div>
           <h2 class="heading-section heading-section--light">Skills</h2>
 
           <div class="skills__box">
@@ -738,16 +746,17 @@
             </ul>
           </div>
         </section>
+        <div id="about" class="u-anchor"></div>
+        <div class="skills-end"></div>
 
         <section class="section-about">
-          <div id="about" class="u-anchor"></div>
           <h2 class="heading-section heading-section--dark">
             About me
           </h2>
           <div class="about">
             <figure class="about__shape">
               <img
-                src="src/images/bio-pic-2-nobg.png"
+                src="src/images/bio-pic-2.jpg"
                 loading="lazy"
                 alt="Bio pic"
                 class="about__image"
@@ -755,9 +764,8 @@
             </figure>
             <div class="about__text">
               <p>
-                I currently live in New York City. I have been working as an
-                Instrumentation and controls engineer in both controls design
-                and system integration within the Industrial setting for 8
+                I have been working as an controls engineer and consultant in
+                both design integration within the Industrial setting for 8
                 years.
               </p>
               <br />
@@ -774,28 +782,36 @@
             <h3 class="education__header">
               Education
             </h3>
-            <div class="education__box">
+            <div class="education__box education__box--1">
+              <h4 class="education__title">
+                Udemy
+              </h4>
+              <p class="education__degree">
+                Advanced CSS and Sass
+              </p>
+            </div>
+            <div class="education__box education__box--2">
               <h4 class="education__title">
                 Treehouse
               </h4>
               <p class="education__degree">
-                Online Fullstack JavaScript Techdegree, Dec 2019 - May 2020
+                Fullstack JavaScript Techdegree
               </p>
             </div>
 
-            <div class="education__box">
+            <div class="education__box education__box--3">
               <h4 class="education__title">
-                University of the Pacific, Stockton CA
+                University of the Pacific
               </h4>
               <p class="education__degree">
-                Bachelor of Science in Electrical Engineering 2012
+                Electrical Engineering B.S.
               </p>
             </div>
           </div>
         </section>
-
+        <div id="contact" class="u-anchor"></div>
+        <div class="about-end"></div>
         <section class="section-contact">
-          <div id="contact" class="u-anchor"></div>
           <h2 class="heading-section heading-section--light">
             Contact Information
           </h2>
@@ -816,7 +832,7 @@
                   alt="Logo"
                   class="contact__link-logo"
                 />
-                <p class="contact__link-text">Connect on LinkedIn</p>
+                <p class="contact__link-text">LinkedIn</p>
               </a>
               <a
                 target="_blank"
@@ -829,7 +845,7 @@
                   alt="Logo"
                   class="contact__link-logo"
                 />
-                <p class="contact__link-text">Project Source Codes</p>
+                <p class="contact__link-text">Github</p>
               </a>
             </div>
 
@@ -848,7 +864,8 @@
       </main>
 
       <footer class="footer">
-        <a
+        <p class="copyright">&copy;2020 Joe Turner</p>
+        <!-- <a
           target="_blank"
           rel="noreferrer"
           href="https://github.com/joegturner"
@@ -860,7 +877,7 @@
             alt="Logo"
             class="footer__logo"
           />
-        </a>
+        </a> -->
       </footer>
     </div>
   </body>
