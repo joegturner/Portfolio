@@ -1,3 +1,16 @@
+.dot {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 9999;
+
+  animation: growdot 2s ease-out;
+}
+
 .header {
   height: 90vh;
   z-index: 100;
@@ -14,13 +27,18 @@
     0 90%
   );
   text-align: center;
+
   &__box-main {
-    position: absolute;
+    animation: expand 2s ease-out;
 
     width: 80%;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    // position: absolute;
+    // top: 30%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    margin: 0 auto;
+
     text-align: center;
     padding: 5rem 0;
 
@@ -30,11 +48,18 @@
   }
 
   &__box-sub {
-    position: absolute;
+    animation: expand 2s ease-out;
+
     width: 80%;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+    margin: 0 auto;
+    margin-top: 8rem;
+
+    // position: absolute;
+    // top: 85%;
+    // left: 50%;
+
+    // transform: translate(-50%, -50%);
     text-align: center;
   }
 

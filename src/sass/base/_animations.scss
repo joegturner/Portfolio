@@ -1,3 +1,58 @@
+@keyframes expand {
+  0% {
+    transform: scaleX(0);
+  }
+
+  50% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes growdot {
+  0% {
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    border-radius: 100%;
+  }
+
+  17% {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100%;
+  }
+
+  34% {
+    width: 1px;
+    height: 1px;
+    background-color: white;
+
+    border-radius: 0;
+  }
+  35% {
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+  }
+
+  50% {
+    width: 1px;
+    height: 100vh;
+    background-color: transparent;
+  }
+
+  100% {
+    width: 100vw;
+    height: 1vh;
+    background-color: transparent;
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translate(0);

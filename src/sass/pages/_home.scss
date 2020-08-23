@@ -1,21 +1,34 @@
+.section-intro {
+  background-color: $color-grey-light;
+  padding: 15rem 2rem 5rem 2rem;
+  min-height: 10vh;
+  border-bottom: 1px solid $color-grey-dark;
+  margin-top: -6rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  // grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+}
 .section-projects {
   background-color: $color-grey-light;
   z-index: 50;
   position: relative;
-  padding: 10rem 5rem 20rem 5rem;
-  margin-top: -6rem;
+  padding: 2rem 5rem 20rem 5rem;
+  // margin-top: -6rem;
 
   clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 10% 100%, 0 90%);
 
   @include respond(tab-port) {
-    margin-top: -12rem;
+    // margin-top: -12rem;
 
-    padding: 12rem 5rem 10rem 5rem;
+    padding: 2rem 5rem 10rem 5rem;
     clip-path: polygon(0 0, 100% 0, 100% 98%, 90% 100%, 10% 100%, 0 98%);
   }
 
   @include respond(phone) {
-    padding: 12rem 1rem 13rem 1rem;
+    padding: 2rem 1rem 13rem 1rem;
   }
 }
 

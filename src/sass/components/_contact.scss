@@ -81,6 +81,7 @@
     margin: 5rem 0 0 0;
     width: 45rem;
     border-radius: 60%;
+    filter: brightness(120%);
 
     box-shadow: 0 0.2rem 1rem rgba($color-white, 0.4);
     @include respond(phone) {
