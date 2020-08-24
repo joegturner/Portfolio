@@ -7,7 +7,7 @@
   align-items: center;
 
   @include respond(tab-port) {
-    margin: 0 8rem;
+    margin: 0 3rem;
   }
 
   &__icon {
@@ -18,7 +18,7 @@
   }
 
   &__text {
-    font-size: 1.6rem;
+    font-size: 2rem;
     grid-column: 2 / 3;
     color: $color-grey-light;
   }

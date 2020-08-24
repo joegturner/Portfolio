@@ -7,37 +7,34 @@ body {
 }
 
 .heading-primary {
-  @include respond(phone) {
-  }
-
   &--main {
     color: $color-grey-light;
 
-    font-size: 7rem;
+    font-size: 10rem;
     font-weight: 400;
     letter-spacing: 1rem;
     // margin-right: -1rem;
 
     @include respond(phone) {
-      font-size: 7rem;
+      font-size: 8rem;
     }
   }
 
   &--sub {
     color: $color-white;
 
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 400;
     letter-spacing: 0.5rem;
 
     @include respond(phone) {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
 }
 
 .heading-secondary {
-  font-size: 2rem;
+  font-size: 3rem;
   color: $color-grey;
 }
 
@@ -86,4 +83,24 @@ body {
 }
 .text--dark {
   color: $color-black;
+}
+
+.heading-1 {
+  font-size: 6rem;
+  color: $color-grey-light-1;
+  line-height: 1;
+}
+
+.heading-2 {
+  font-size: 3em;
+  font-style: italic;
+  line-height: 1;
+}
+
+.heading-3 {
+  font-size: 1.6rem;
+}
+
+.heading-4 {
+  font-size: 2.1rem;
 }
