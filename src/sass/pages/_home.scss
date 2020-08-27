@@ -4,6 +4,10 @@
   background-color: $color-bg-dark;
   margin-top: -2px;
   box-shadow: 0 -0.1rem 0rem rgba($color-black, 0.8);
+
+  @include respond(tab-port) {
+    padding: 5rem 3rem 5rem 3rem;
+  }
 }
 
 .section-details {
