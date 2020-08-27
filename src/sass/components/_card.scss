@@ -194,6 +194,7 @@
     margin: 0.2rem;
     border-radius: 1rem;
     font-weight: 300;
+    color: $color-text-dark;
   }
 
   @include respond(tab-land) {

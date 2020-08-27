@@ -16,21 +16,21 @@
   0% {
     width: 1px;
     height: 1px;
-    background-color: white;
+    background-color: $color-black;
     border-radius: 100%;
   }
 
   17% {
-    width: 30px;
-    height: 30px;
-    background-color: white;
+    width: 20px;
+    height: 20px;
+    background-color: $color-black;
     border-radius: 100%;
   }
 
   34% {
     width: 1px;
     height: 1px;
-    background-color: white;
+    background-color: $color-black;
 
     border-radius: 0;
   }
@@ -42,8 +42,11 @@
 
   50% {
     width: 1px;
-    height: 120vh;
+    height: 100vh;
     background-color: transparent;
+    @include respond(tab-port) {
+      height: 90vh;
+    }
   }
 
   100% {

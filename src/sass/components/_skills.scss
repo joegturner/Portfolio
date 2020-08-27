@@ -6,7 +6,7 @@
     margin: 2rem 20rem;
     border-radius: 2rem;
     box-shadow: 0 0.5rem 1rem rgba($color-white, 0.4);
-    border-top: 10px solid $color-primary;
+    border-top: 10px solid $color-black;
     background-color: $color-grey-light;
     // background-image: linear-gradient(
     //   to right bottom,
@@ -49,4 +49,5 @@
   font-size: 2rem;
   font-weight: 300;
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
+  color: $color-black;
 }
