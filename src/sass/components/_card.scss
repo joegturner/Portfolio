@@ -14,7 +14,14 @@
   }
 
   @include respond(iphonex) {
-    height: 25rem;
+    height: 27rem;
+  }
+}
+
+@mixin cardWidth {
+  width: 38rem;
+  @include respond(iphonex) {
+    width: 30rem;
   }
 }
 
@@ -23,7 +30,7 @@
   // background-color: orangered;
   z-index: 1;
   @include cardHeight;
-  width: 38rem;
+  @include cardWidth;
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
@@ -32,7 +39,7 @@
 
   &__side {
     @include cardHeight;
-    width: 38rem;
+    @include cardWidth;
     height: inherit;
     position: absolute;
     top: 0;

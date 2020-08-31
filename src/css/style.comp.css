@@ -524,7 +524,10 @@ body {
       height: 30rem; } }
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .card {
-      height: 25rem; } }
+      height: 27rem; } }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .card {
+      width: 30rem; } }
   .card__side {
     height: 27rem;
     width: 38rem;
@@ -553,7 +556,10 @@ body {
         height: 30rem; } }
     @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
       .card__side {
-        height: 25rem; } }
+        height: 27rem; } }
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+      .card__side {
+        width: 30rem; } }
     .card__side--front {
       background-color: transparent; }
     .card__side--back {
@@ -1531,23 +1537,16 @@ body {
       border-radius: 50%;
       opacity: 0.7;
       object-fit: cover; }
-    @media only screen and (max-width: 75em) {
-      .header__video {
-        display: none; } }
   .header__pic {
     width: 100%;
     overflow: hidden;
-    filter: contrast(120%);
-    display: none; }
+    filter: contrast(120%); }
     .header__pic__content {
       height: 20rem;
       width: 20rem;
       border-radius: 50%;
       opacity: 0.9;
       object-fit: cover; }
-    @media only screen and (max-width: 75em) {
-      .header__pic {
-        display: block; } }
 
 .nav {
   height: 4rem;
@@ -1699,7 +1698,7 @@ body {
   border: 1px solid rgba(36, 39, 43, 0.3); }
   @media only screen and (max-width: 37.5em) {
     .section-projects {
-      padding: 5rem 2rem; } }
+      padding: 5rem 1rem; } }
 
 .section-skills {
   width: 95%;

@@ -76,16 +76,16 @@
       object-fit: cover;
     }
 
-    @include respond(tab-land) {
-      display: none;
-    }
+    // @include respond(tab-land) {
+    //   display: none;
+    // }
   }
 
   &__pic {
     width: 100%;
     overflow: hidden;
     filter: contrast(120%);
-    display: none;
+
     &__content {
       height: 20rem;
       width: 20rem;
@@ -95,8 +95,8 @@
       object-fit: cover;
     }
 
-    @include respond(tab-land) {
-      display: block;
-    }
+    // @include respond(tab-land) {
+    //   display: block;
+    // }
   }
 }

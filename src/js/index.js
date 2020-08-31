@@ -57,3 +57,29 @@ body.addEventListener("click", (event) => {
     navButton.checked = false;
   }
 });
+
+// check if mobile or not
+// to determine whether to load header video file
+const video = document.getElementById("header-video");
+const pic = document.getElementById("header-pic");
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  console.log("mobile");
+  // show header video or picture
+  video.style.display = "none";
+  pic.style.display = "block";
+} else {
+  console.log("not mobile");
+  // const source = document.querySelectorAll(".header__video__content source")[0];
+  // source.setAttribute("src", source.getAttribute("data-src"));
+
+  video.innerHTML =
+    '<video class="header__video__content" autoplay muted loop><source src="src/images/header-video.mp4" type="video/mp4" />Your browser is not supported!</video>';
+
+  // show header video or picture
+  video.style.display = "block";
+  pic.style.display = "none";
+}
