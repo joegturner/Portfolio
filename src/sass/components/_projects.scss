@@ -6,6 +6,10 @@
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 5rem;
   justify-items: center;
+
+  @include respond(phone) {
+    gap: 3rem;
+  }
 }
 
 /*

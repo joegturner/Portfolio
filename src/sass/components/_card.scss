@@ -14,14 +14,15 @@
   }
 
   @include respond(iphonex) {
-    height: 27rem;
+    height: 30rem;
   }
 }
 
 @mixin cardWidth {
   width: 38rem;
+
   @include respond(iphonex) {
-    width: 30rem;
+    width: 40rem;
   }
 }
 
@@ -40,11 +41,10 @@
   &__side {
     @include cardHeight;
     @include cardWidth;
-    height: inherit;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
