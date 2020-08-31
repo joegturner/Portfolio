@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
@@ -85,22 +85,31 @@
         <div class="dot"></div>
         <div class="header__box-main">
           <h1 class="heading-primary heading-primary--main">Joe Turner</h1>
-          <h3 class="heading-primary heading-primary--sub u-margin-top-medium">
+          <h3 class="heading-primary heading-primary--sub">
             I'm a Full Stack Web Developer
           </h3>
 
-          <p class="heading-secondary u-margin-top-small">
+          <div class="header__video">
+            <video class="header__video__content" autoplay muted loop>
+              <source src="src/images/bg-video.mp4" type="video/mp4" />
+
+              Your browser is not supported!
+            </video>
+          </div>
+
+          <p class="heading-secondary">
             <i class="header__loc-icon icon-basic-geolocalize-01"></i>
             <span>New York City</span>
           </p>
         </div>
+
         <div class="header__box-sub">
           <p class="heading-tertiary">Welcome to my Portfolio</p>
 
           <img
             src="src/images/scroll-down-icon.png"
             alt="icon"
-            class="header__scroll-icon u-margin-top-medium"
+            class="header__scroll-icon u-margin-top-small"
           />
         </div>
       </header>
