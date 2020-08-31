@@ -1,0 +1,554 @@
+.projects {
+  width: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 5rem;
+  justify-items: center;
+}
+
+/*
+<section class="section-projects">
+          <h2 class="heading-section heading-section--dark">Projects</h2>
+
+          <!--Row 1-->
+          <div class="row">
+            <!--1st col-->
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <figure class="card__shape">
+                    <img
+                      src="src/images/weather-app.jpg"
+                      loading="lazy"
+                      alt="Project image"
+                      class="card__image"
+                    />
+                  </figure>
+
+                  <h4 class="card__heading">
+                    <span> ˚F and ˚C Weather App</span>
+                  </h4>
+                </div>
+
+                <div class="card__side card__side--back">
+                  <p class="card__text">
+                    A weather app that displays temperature in both ˚F and ˚C
+                  </p>
+
+                  <div class="card__links">
+                    <div>
+                      <a
+                        href="https://joegturner.github.io/react-weather/"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/joegturner/react-weather"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__made-with">
+                      <div class="card__made-with-line">&nbsp;</div>
+                      <p class="card__made-with-text">Made with</p>
+                      <div class="card__made-with-line">&nbsp;</div>
+                    </div>
+                    <ul class="card__techs">
+                      <li>React</li>
+                      <li>Bootstrap</li>
+                      <li>Weather API</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--2nd col-->
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <figure class="card__shape">
+                    <img
+                      src="src/images/courses-manager.jpg"
+                      loading="lazy"
+                      alt="Project image"
+                      class="card__image"
+                    />
+                  </figure>
+
+                  <h4 class="card__heading">
+                    <span> Courses Manager</span>
+                  </h4>
+                </div>
+                <div class="card__side card__side--back">
+                  <p class="card__text">
+                    Fictional courses manager where you can create, update, and
+                    delete courses in a relational database
+                  </p>
+
+                  <div class="card__links">
+                    <div>
+                      <a
+                        href="https://jgturner-fullstack-courses.herokuapp.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/joegturner/Fullstack-React-REST"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__made-with">
+                      <div class="card__made-with-line">&nbsp;</div>
+                      <p class="card__made-with-text">Made with</p>
+                      <div class="card__made-with-line">&nbsp;</div>
+                    </div>
+                    <ul class="card__techs">
+                      <li>Node</li>
+                      <li>React</li>
+                      <li>Rest API</li>
+                      <li>Express</li>
+                      <li>Sequelize ORM</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--3rd col-->
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <figure class="card__shape">
+                    <img
+                      src="src/images/library-manager.jpg"
+                      loading="lazy"
+                      alt="Project image"
+                      class="card__image"
+                    />
+                  </figure>
+
+                  <h4 class="card__heading">
+                    <span> Sequelize Library</span>
+                  </h4>
+                </div>
+                <div class="card__side card__side--back">
+                  <p class="card__text">
+                    Fictional Library books manager used to create, delete, and
+                    edit books with pagination and search functionality
+                  </p>
+
+                  <div class="card__links">
+                    <div>
+                      <a
+                        href="https://jgturner-sql-library-manager.herokuapp.com/book"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/joegturner/SQL-Library-Manager"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__made-with">
+                      <div class="card__made-with-line">&nbsp;</div>
+                      <p class="card__made-with-text">Made with</p>
+                      <div class="card__made-with-line">&nbsp;</div>
+                    </div>
+                    <ul class="card__techs">
+                      <li>Node</li>
+                      <li>Express</li>
+                      <li>Pug</li>
+                      <li>Sequelize ORM</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Row 2-->
+          <div class="row">
+            <!--1st col-->
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <figure class="card__shape">
+                    <img
+                      src="src/images/react-gallery.jpg"
+                      loading="lazy"
+                      alt="Project image"
+                      class="card__image"
+                    />
+                  </figure>
+
+                  <h4 class="card__heading">
+                    <span> React Gallery</span>
+                  </h4>
+                </div>
+
+                <div class="card__side card__side--back">
+                  <p class="card__text">
+                    React photo gallery fetching photos from Flickr's public API
+                  </p>
+
+                  <div class="card__links">
+                    <div>
+                      <a
+                        href="https://joegturner.github.io/React-Gallery"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/joegturner/React-Gallery"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__made-with">
+                      <div class="card__made-with-line">&nbsp;</div>
+                      <p class="card__made-with-text">Made with</p>
+                      <div class="card__made-with-line">&nbsp;</div>
+                    </div>
+                    <ul class="card__techs">
+                      <li>React</li>
+                      <li>Fetch API</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--2nd col-->
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <figure class="card__shape">
+                    <img
+                      src="src/images/api-list.jpg"
+                      loading="lazy"
+                      alt="Project image"
+                      class="card__image"
+                    />
+                  </figure>
+
+                  <h4 class="card__heading">
+                    <span> Public API Requests</span>
+                  </h4>
+                </div>
+                <div class="card__side card__side--back">
+                  <p class="card__text">
+                    Fictional employee list fetched from an API with search
+                    functionality
+                  </p>
+
+                  <div class="card__links">
+                    <div>
+                      <a
+                        href="https://joegturner.github.io/Public-API-Requests/"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/joegturner/Public-API-Requests"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__made-with">
+                      <div class="card__made-with-line">&nbsp;</div>
+                      <p class="card__made-with-text">Made with</p>
+                      <div class="card__made-with-line">&nbsp;</div>
+                    </div>
+                    <ul class="card__techs">
+                      <li>Fetch API</li>
+                      <li>OOP</li>
+                      <li>DOM Manipulation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--3rd col-->
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <figure class="card__shape">
+                    <img
+                      src="src/images/phrase-hunter.jpg"
+                      loading="lazy"
+                      alt="Project image"
+                      class="card__image"
+                    />
+                  </figure>
+
+                  <h4 class="card__heading">
+                    <span> Phrase Guessing Game</span>
+                  </h4>
+                </div>
+                <div class="card__side card__side--back">
+                  <p class="card__text">
+                    Guess the hidden phrase with a limited number of guesses
+                  </p>
+
+                  <div class="card__links">
+                    <div>
+                      <a
+                        href="https://joegturner.github.io/Phrase-Guessing-Game/"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/joegturner/Phrase-Guessing-Game"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__made-with">
+                      <div class="card__made-with-line">&nbsp;</div>
+                      <p class="card__made-with-text">Made with</p>
+                      <div class="card__made-with-line">&nbsp;</div>
+                    </div>
+                    <ul class="card__techs">
+                      <li>OOP</li>
+                      <li>DOM Manipulation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Row 3-->
+          <div class="row">
+            <!--1st col-->
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <figure class="card__shape">
+                    <img
+                      src="src/images/conference_form.jpg"
+                      loading="lazy"
+                      alt="Project image"
+                      class="card__image"
+                    />
+                  </figure>
+
+                  <h4 class="card__heading">
+                    <span>Interactive Form</span>
+                  </h4>
+                </div>
+                <div class="card__side card__side--back">
+                  <p class="card__text">
+                    Interactive registration form for a fictional conference
+                  </p>
+
+                  <div class="card__links">
+                    <div>
+                      <a
+                        href="https://joegturner.github.io/Interactive-Form/"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/joegturner/Interactive-Form"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__made-with">
+                      <div class="card__made-with-line">&nbsp;</div>
+                      <p class="card__made-with-text">Made with</p>
+                      <div class="card__made-with-line">&nbsp;</div>
+                    </div>
+                    <ul class="card__techs">
+                      <li>DOM Manipulation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--2nd col-->
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <figure class="card__shape">
+                    <img
+                      src="src/images/pagination.jpg"
+                      loading="lazy"
+                      alt="Project image"
+                      class="card__image"
+                    />
+                  </figure>
+
+                  <h4 class="card__heading">
+                    <span>Pagination and Filtering</span>
+                  </h4>
+                </div>
+
+                <div class="card__side card__side--back">
+                  <p class="card__text">
+                    A fictional list of students with pagination and search
+                    functionality
+                  </p>
+
+                  <div class="card__links">
+                    <div>
+                      <a
+                        href="https://joegturner.github.io/List-Pagination/"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/joegturner/List-Pagination"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__made-with">
+                      <div class="card__made-with-line">&nbsp;</div>
+                      <p class="card__made-with-text">Made with</p>
+                      <div class="card__made-with-line">&nbsp;</div>
+                    </div>
+                    <ul class="card__techs">
+                      <li>DOM Manipulation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--3rd col-->
+            <div class="col-1-of-3">
+              <div class="card">
+                <div class="card__side card__side--front">
+                  <figure class="card__shape">
+                    <img
+                      src="src/images/rand-quote.jpg"
+                      loading="lazy"
+                      alt="Project image"
+                      class="card__image"
+                    />
+                  </figure>
+
+                  <h4 class="card__heading">
+                    <span>Random Quote Generator</span>
+                  </h4>
+                </div>
+                <div class="card__side card__side--back">
+                  <p class="card__text">
+                    Generates a random quote from a public quotes API every 20
+                    seconds or when the button is clicked
+                  </p>
+
+                  <div class="card__links">
+                    <div>
+                      <a
+                        href="https://joegturner.github.io/Random-Quote-Gen/"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/joegturner/Random-Quote-Gen"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="btn btn--white"
+                      >
+                        Source Code
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__made-with">
+                      <div class="card__made-with-line">&nbsp;</div>
+                      <p class="card__made-with-text">Made with</p>
+                      <div class="card__made-with-line">&nbsp;</div>
+                    </div>
+                    <ul class="card__techs">
+                      <li>Fetch API</li>
+                      <li>DOM Manipulation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+*/

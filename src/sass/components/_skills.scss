@@ -1,33 +1,20 @@
 .skills {
   &__box {
-    display: inline-block;
-    width: 60rem;
+    width: 70rem;
     padding: 1rem 4rem 2rem 4rem;
-    margin: 2rem 20rem;
-    border-radius: 2rem;
+    margin: 2rem auto;
+
     box-shadow: 0 0.5rem 1rem rgba($color-white, 0.4);
     border-top: 10px solid $color-black;
     background-color: $color-grey-light;
-    // background-image: linear-gradient(
-    //   to right bottom,
-    //   rgba(255, 249, 223, 0.9),
-    //   rgba(80, 215, 252, 0.8),
-    //   rgba(255, 249, 223, 0.9)
-    // );
 
     @include respond(tab-port) {
       width: 55rem;
-      margin: 2rem 10rem;
     }
 
     @include respond(phone) {
-      margin: 2rem 0.5rem;
       padding: 1rem 1rem 2rem 1rem;
       width: 90%;
-    }
-
-    @include respond(big-desktop) {
-      margin: 2rem 30rem;
     }
   }
 

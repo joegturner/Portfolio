@@ -42,7 +42,7 @@
 
   50% {
     width: 1px;
-    height: 100vh;
+    height: 95vh;
     background-color: transparent;
     @include respond(tab-port) {
       height: 90vh;

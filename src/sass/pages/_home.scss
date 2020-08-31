@@ -1,30 +1,13 @@
-.section-intro {
-  padding: 5rem 10rem 5rem 10rem;
-  text-align: center;
-  background-color: $color-bg-dark;
-  margin-top: -2px;
-  box-shadow: 0 -0.1rem 0rem rgba($color-black, 0.8);
-
-  @include respond(tab-port) {
-    padding: 5rem 3rem 5rem 3rem;
-  }
-}
-
 .section-details {
-  background-color: $color-bg-dark;
-  padding: 0 5rem 5rem 5rem;
+  @include sectionStyling;
+  background-color: rgba($color-bg-dark, 0.5);
   min-height: 10vh;
-  box-shadow: 0 1rem 0.5rem rgba($color-black, 0.8);
 
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, min-content);
-
   grid-gap: 6rem;
   align-items: start;
-
-  margin-bottom: -2px;
 
   @include respond(tab-port) {
     grid-template-columns: 1fr;
@@ -33,46 +16,39 @@
 }
 
 .section-projects {
+  @include sectionStyling;
   background-color: $color-bg-light;
-  padding: 0 5rem 3rem 5rem;
-  box-shadow: 0 1rem 0.5rem rgba($color-black, 0.8);
-  margin-bottom: -1px;
-
+  border: 1px solid rgba($color-black, 0.3);
   @include respond(phone) {
-    padding: 0 1rem 2rem 1rem;
+    padding: 5rem 2rem;
   }
 }
 
 .section-skills {
-  padding: 0 5rem 3rem 5rem;
+  @include sectionStyling;
+  background-color: rgba($color-bg-dark, 0.5);
   text-align: center;
-
-  background-color: $color-bg-dark;
-  box-shadow: 0 1rem 0.5rem rgba($color-black, 0.8);
-  margin-top: -1px;
-  margin-bottom: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 
   @include respond(tab-port) {
-    padding: 0 2rem 3rem 2rem;
+    padding: 5rem 2rem;
   }
 }
 
 .section-about {
+  @include sectionStyling;
   background-color: $color-bg-light;
-  padding: 0 5rem 3rem 5rem;
-  box-shadow: 0 1rem 0.5rem rgba($color-black, 0.8);
-  margin-top: -1px;
-  margin-bottom: -2px;
+
   @include respond(tab-port) {
     padding: 5rem 2rem;
   }
 }
 
 .section-contact {
-  background-color: $color-bg-dark;
-  padding: 0 5rem 3rem 5rem;
-  box-shadow: 0 1rem 0.5rem rgba($color-black, 0.8);
-  margin-top: -2px;
+  @include sectionStyling;
+  background-color: rgba($color-bg-dark, 0.5);
 
   @include respond(phone) {
     padding: 5rem 1rem 5rem 1rem;
@@ -102,7 +78,7 @@
   }
 
   &--dark {
-    background-color: $color-bg-dark;
+    background-color: rgba($color-bg-dark, 0.5);
   }
 }
 
@@ -119,7 +95,7 @@
   }
 
   &--dark {
-    background-color: $color-bg-dark;
+    background-color: rgba($color-bg-dark, 0.5);
   }
 }
 
@@ -128,5 +104,5 @@
 }
 
 .boundary-top {
-  filter: drop-shadow(0 -0.1rem 0rem rgba($color-black, 0.3));
+  filter: drop-shadow(0 -0.5rem 0rem rgba($color-black, 0.3));
 }

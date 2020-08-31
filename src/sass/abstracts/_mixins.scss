@@ -13,6 +13,15 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin sectionStyling {
+  width: 99%;
+  padding: 5rem;
+  margin: 5rem auto;
+
+  border: 1px solid rgba($color-black, 0.3);
+  box-shadow: 0 1rem 0.5rem rgba($color-black, 0.8);
+}
+
 // MEDIA QUERY MANAGER
 /*
 0 - 600px:      Phone

@@ -13,18 +13,18 @@
 }
 
 .header {
-  height: 85vh;
-  background-color: $color-grey-dark;
+  min-height: 95vh;
+  padding: 0 0 3rem 0;
+
   background-color: $color-bg-light;
   box-shadow: 0 1rem 0.5rem rgba($color-black, 0.8);
-  position: relative;
+
   text-align: center;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: -2px;
 
   @include respond(tab-port) {
     height: 90vh;
@@ -35,10 +35,6 @@
 
     padding: 5rem 0;
     animation: expand 2s ease-out;
-
-    // @include respond(tab-land) {
-    //   margin-top: 8rem;
-    // }
   }
 
   &__box-sub {

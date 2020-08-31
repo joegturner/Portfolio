@@ -34,10 +34,10 @@
     padding: 1rem;
     width: 25rem;
     text-decoration: none;
-    border-top: 5px solid $color-black;
+
     border-radius: 10rem;
     transition: all 0.2s;
-    box-shadow: 0 0.5rem 1rem rgba($color-white, 0.4);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
 
     display: flex;
     justify-content: center;
@@ -46,14 +46,14 @@
 
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-white, 0.3);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
     }
 
     &:active,
     &:focus {
       outline: none;
       transform: translateY(-1px);
-      box-shadow: 0 0.5rem 1rem rgba($color-white, 0.4);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
     }
     @include respond(tab-port) {
       line-height: 1.5;
@@ -85,7 +85,7 @@
   }
 
   &__image {
-    margin: 5rem 0 0 0;
+    margin: 3rem 0 0 0;
     width: 45rem;
     border-radius: 60%;
     filter: brightness(120%);
@@ -98,7 +98,7 @@
 
   &__message {
     font-size: 3rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
     font-weight: 400;
     color: $color-black;
 
