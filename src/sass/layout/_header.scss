@@ -27,7 +27,7 @@
   align-items: center;
 
   @include respond(tab-port) {
-    height: 90vh;
+    min-height: 90vh;
   }
 
   &__box-main {

@@ -201,8 +201,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .heading-section {
       font-size: 4rem;
-      letter-spacing: 1rem;
-      margin-right: -1rem; } }
+      letter-spacing: 1rem; } }
   .heading-section--dark {
     color: #24272b; }
   .heading-section--light {
@@ -518,13 +517,13 @@ body {
       height: 28rem; } }
   @media only screen and (max-width: 56.25em) {
     .card {
-      height: 31rem; } }
+      height: 29rem; } }
   @media only screen and (max-width: 37.5em) {
     .card {
-      height: 30rem; } }
+      height: 27rem; } }
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .card {
-      height: 30rem; } }
+      height: 28rem; } }
   @media only screen and (max-width: 37.5em) {
     .card {
       width: 33rem; } }
@@ -548,13 +547,13 @@ body {
         height: 28rem; } }
     @media only screen and (max-width: 56.25em) {
       .card__side {
-        height: 31rem; } }
+        height: 29rem; } }
     @media only screen and (max-width: 37.5em) {
       .card__side {
-        height: 30rem; } }
+        height: 27rem; } }
     @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
       .card__side {
-        height: 30rem; } }
+        height: 28rem; } }
     @media only screen and (max-width: 37.5em) {
       .card__side {
         width: 33rem; } }
@@ -831,6 +830,7 @@ body {
   justify-items: center; }
   @media only screen and (max-width: 37.5em) {
     .projects {
+      grid-template-columns: 1fr;
       gap: 3rem; } }
 
 /*
@@ -1508,7 +1508,7 @@ body {
   align-items: center; }
   @media only screen and (max-width: 56.25em) {
     .header {
-      height: 90vh; } }
+      min-height: 90vh; } }
   .header__box-main {
     width: 80%;
     padding: 5rem 0;
