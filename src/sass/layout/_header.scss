@@ -75,5 +75,28 @@
 
       object-fit: cover;
     }
+
+    @include respond(tab-land) {
+      display: none;
+    }
+  }
+
+  &__pic {
+    width: 100%;
+    overflow: hidden;
+    filter: contrast(120%);
+    display: none;
+    &__content {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+      opacity: 0.9;
+
+      object-fit: cover;
+    }
+
+    @include respond(tab-land) {
+      display: block;
+    }
   }
 }
