@@ -21,8 +21,8 @@
 @mixin cardWidth {
   width: 38rem;
 
-  @include respond(iphonex) {
-    width: 35rem;
+  @include respond(phone) {
+    width: 33rem;
   }
 }
 
