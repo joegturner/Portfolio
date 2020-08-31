@@ -527,7 +527,7 @@ body {
       height: 30rem; } }
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .card {
-      width: 40rem; } }
+      width: 35rem; } }
   .card__side {
     height: 27rem;
     width: 38rem;
@@ -557,7 +557,7 @@ body {
         height: 30rem; } }
     @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
       .card__side {
-        width: 40rem; } }
+        width: 35rem; } }
     .card__side--front {
       background-color: transparent; }
     .card__side--back {
